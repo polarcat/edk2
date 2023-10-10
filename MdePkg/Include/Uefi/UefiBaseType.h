@@ -255,6 +255,11 @@ typedef union {
 #define EFI_IMAGE_MACHINE_LOONGARCH32  0x6232
 #define EFI_IMAGE_MACHINE_LOONGARCH64  0x6264
 
+///
+/// PE32+ Machine type for ARCv2 images.
+///
+#define EFI_IMAGE_MACHINE_ARC2 0xac02
+
 #if !defined (EFI_IMAGE_MACHINE_TYPE_VALUE) && !defined (EFI_IMAGE_MACHINE_CROSS_TYPE_VALUE)
   #if   defined (MDE_CPU_IA32)
 
@@ -293,6 +298,13 @@ typedef union {
 
 #define EFI_IMAGE_MACHINE_TYPE_SUPPORTED(Machine) \
     ((Machine) == EFI_IMAGE_MACHINE_LOONGARCH64)
+
+#define EFI_IMAGE_MACHINE_CROSS_TYPE_SUPPORTED(Machine)  (FALSE)
+
+  #elif defined (MDE_CPU_ARC2)
+
+#define EFI_IMAGE_MACHINE_TYPE_SUPPORTED(Machine) \
+  ((Machine) == EFI_IMAGE_MACHINE_ARC2)
 
 #define EFI_IMAGE_MACHINE_CROSS_TYPE_SUPPORTED(Machine)  (FALSE)
 

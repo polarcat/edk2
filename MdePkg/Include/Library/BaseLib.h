@@ -231,6 +231,30 @@ typedef struct {
 
 #endif // defined (MDE_CPU_LOONGARCH64)
 
+#if defined (MDE_CPU_ARC2)
+
+typedef struct {
+  UINT32    R13;
+  UINT32    R14;
+  UINT32    R15;
+  UINT32    R16;
+  UINT32    R17;
+  UINT32    R18;
+  UINT32    R19;
+  UINT32    R20;
+  UINT32    R21;
+  UINT32    R22;
+  UINT32    R23;
+  UINT32    R24;
+  UINT32    R25;
+  UINT32    FP;
+  UINT32    SP;
+} BASE_LIBRARY_JUMP_BUFFER;
+
+#define BASE_LIBRARY_JUMP_BUFFER_ALIGNMENT  4
+
+#endif // defined (MDE_CPU_ARC2)
+
 //
 // String Services
 //
