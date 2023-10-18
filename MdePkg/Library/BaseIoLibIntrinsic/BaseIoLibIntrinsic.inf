@@ -66,6 +66,9 @@
 [Sources.LOONGARCH64]
   IoLibNoIo.c
 
+[Sources.ARC2]
+  IoLibNoIo.c
+
 [Packages]
   MdePkg/MdePkg.dec
 
