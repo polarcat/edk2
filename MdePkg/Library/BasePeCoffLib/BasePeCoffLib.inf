@@ -51,6 +51,9 @@
 [Sources.LOONGARCH64]
   LoongArch/PeCoffLoaderEx.c
 
+[Sources.ARC2]
+  PeCoffLoaderEx.c
+
 [Packages]
   MdePkg/MdePkg.dec
 

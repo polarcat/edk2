@@ -52,6 +52,9 @@
 [Includes.LOONGARCH64]
   Include/LoongArch64
 
+[Includes.ARC2]
+  Include/Arc2
+
 [LibraryClasses]
   ##  @libraryclass  Provides most usb APIs to support the Hid requests defined in Usb Hid 1.1 spec
   #                  and the standard requests defined in Usb 1.1 spec.

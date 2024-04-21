@@ -420,6 +420,10 @@
   LoongArch64/SetJumpLongJump.S     | GCC
   LoongArch64/SwitchStack.S         | GCC
 
+[Sources.ARC2]
+  Math64.c
+  Unaligned.c
+
 [Packages]
   MdePkg/MdePkg.dec
 
